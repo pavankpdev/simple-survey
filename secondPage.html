@@ -12,7 +12,6 @@ $(document).ready(function(){
         var value1 = $(".test1 option:selected").val();
         $(".val1").attr("value", value1);
           });
-	
 	$("select.test2").change(function(){
         var value2 = $(".test2 option:selected").val();
 		$(".val2").attr("value", value2);
@@ -28,25 +27,17 @@ $(document).ready(function(){
 	$("select.test5").change(function(){
         var value5 = $(".test5 option:selected").val();
 		$(".val5").attr("value", value5);
-		
-	   
     });
-	
 	$("#submitClick").click(function(){
 	var v5 = parseInt($(".val5").val());
 	var v4 = parseInt($(".val4").val());
 	var v3 = parseInt($(".val3").val());
 	var v2 = parseInt($(".val2").val());
 	var v1 = parseInt($(".val1").val());
-
       	var totalScore =  ((v1+v2+v3+v4+v5)/5);
         localStorage.setItem('score', totalScore);
-        
 	});
-			
-
 });
-
 function myFunction() {
  // document.getElementById("demo").innerHTML = "Hello World";
  window.location.href="/lastPage" ;
@@ -67,7 +58,7 @@ function myFunction() {
       <img src="./image.jpg" alt="logo" />
   </div>
 <div class="right_txt">
-  PwC Survey  
+  PwC Survey
 </div>
 
 <div class="both"></div>
@@ -82,56 +73,54 @@ function myFunction() {
 <input type= "hidden" class = "val2" value="">
 <input type= "hidden" class = "val1" value="">
 <div class="center">
-    
+
 <div class="center">
     <form  action = "/lastPage" style="color:#fff"; id="secPage" method ="GET">
 
   <br>
-<lable><h4>Do you analyze non-functional requirements for your application to get the 
-          idea of production user traffic, system response time, transaction rate etc? 
-     </h4> </lable> 
-<select class ="test1" style="height: 41px;  width: 122px; margin: -94px 600px;" >
-  <option>Select</option>
-  <option value="5">Partially</option>
+<lable><h4>Do you analyze non-functional requirements for your application to get the
+          idea of production user traffic, system response time, transaction rate etc? *
+     </h4> </lable>
+<select class ="test1" style="height: 41px;  width: 122px; margin: -94px 600px;" required >
+  <option value="5" selected>Partially</option>
   <option value="10">Yes</option>
   <option value="0">No</option>
 </select>
-<lable><h4>Do you have a streamlined performance baselining process i.e regular 
-load/stress testing of application and analysis of captured performance metrics?</h4></lable>
-<select class ="test2" style="height: 41px;  width: 122px; margin: -94px 600px;">
-    <option>Select</option>
-  <option value="5">Partially</option>
-  <option value="10">Yes</option>
-  <option value="0">No</option>
-</select>
-
-<lable><h4>Do you have proactive monitoring strategy to monitor application performance?</h4></lable>
-<select class ="test3" style="height: 41px;  width: 122px; margin: -94px 600px;">
-    <option>Select</option> 
-  <option value="5">Partially</option>
+<lable><h4>Do you have a streamlined performance baselining process i.e regular
+load/stress testing of application and analysis of captured performance metrics? *</h4></lable>
+<select class ="test2" style="height: 41px;  width: 122px; margin: -94px 600px;" required>
+  <option value="5" selected>Partially</option>
   <option value="10">Yes</option>
   <option value="0">No</option>
 </select>
 
-<lable><h4>Do you maintain any enterprise level dashboard to check the system and infrastructure  health?</h4></lable>
+<lable><h4>Do you have proactive monitoring strategy to monitor application performance? *</h4></lable>
+<select class ="test3" style="height: 41px;  width: 122px; margin: -94px 600px;" required>
+  <option value="5" selected>Partially</option>
+  <option value="10">Yes</option>
+  <option value="0">No</option>
+</select>
+
+<lable><h4>Do you maintain any enterprise level dashboard to check the system and infrastructure  health? *</h4></lable>
 <select class ="test4" style="height: 41px;  width: 122px; margin: -94px 600px;">
-    <option>Select</option>
   <option value="5">Partially</option>
   <option value="10">Yes</option>
   <option value="0">No</option>
 </select>
 
-<lable><h4>Types of Performance re-engineering exercise you follow in regular basis</h4></lable>
+<lable><h4>Types of Performance re-engineering exercise you follow in regular basis *</h4></lable>
 <select class ="test5" style="height: 41px;  width: 122px; margin: -94px 600px;">
-    <option>Select</option>
-  <option value="5">Partially</option>
+  <option value="5" selected>Partially</option>
   <option value="10">Yes</option>
   <option value="0">No</option>
 </select>
 
 <br>
 <br>
-<center><button class="button button2" id="submitClick"> Submit </button> </center> </div>
+<center>
+    <input type="submit" class="button button2" id="submitClick" value="Submit">
+</center>
+</div>
 </form>
 </body>
 </html>
