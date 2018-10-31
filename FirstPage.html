@@ -2,7 +2,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head> 
+</head>
 
 <body>
 
@@ -16,6 +16,8 @@
   <script type="text/javascript">
     function movetoNext() {
       // document.getElementById("demo").innerHTML = "Hello World";
+
+
        window.location.href="/nextPage" ;
     }
 
@@ -47,52 +49,48 @@
   </div>
 
   <div class="center back-color">
-    <form  style="color:#fff;"action = "/nextPage" id="secPage" method ="GET">
-      <lable> 
-        <h3>Are your end user complaining about application slowness?</h3>
+    <form  style="color:#fff;" action="/nextPage" id="secPage" method="GET">
+      <lable>
+        <h3>Are your end user complaining about application slowness? *</h3>
       </lable>
-      <select style="height: 38px;  width: 122px;">
-        <option>Select</option>
-        <option value="Frequently">Frequently</option>
+      <select style="height: 38px;  width: 122px;" required >
+        <option value="Frequently" selected>Frequently</option>
         <option value="Sometimes">Sometimes</option>
         <option value="Never">Never</option>
       </select>
       <br>
 
       <lable>
-        <h3>Do you face application downtime in buisness hour?</h3> 
-      </lable> 
-      <select style="height: 38px;  width: 122px;">
-        <option>Select</option>
-        <option value="Frequently">Frequently</option>
+        <h3>Do you face application downtime in buisness hour? *</h3>
+      </lable>
+      <select style="height: 38px;  width: 122px;" required >
+        <option value="Frequently" selected>Frequently</option>
         <option value="Sometimes">Sometimes</option>
         <option value="Never">Never</option>
       </select>
       <br>
-            
+
       <lable>
-        <h3>Is your IT infrastructure used optimally? </h3>
+        <h3>Is your IT infrastructure used optimally? *</h3>
       </lable>
-      <select style="height: 38px;  width: 122px;">
-        <option>Select</option>
-        <option value="Partially">Partially</option>
+      <select style="height: 38px;  width: 122px;" required >
+        <option value="Partially" selected>Partially</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
       <br>
-            
+
       <lable>
-        <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth?</h3> 
+        <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth? *</h3>
       </lable>
-      <select style="height: 38px;  width: 122px;">
-        <option>Select</option>
-        <option value="Yes">Yes</option>
+      <select style="height: 38px;  width: 122px;" required >
+        <option value="Yes" selected>Yes</option>
         <option value="No">No</option>
       </select>
       <br>
-      
+
       <lable>
-        <h3>Buisness  impacts as per you due to performance issues.</h3> 
+        <h3>Buisness  impacts as per you due to performance issues.</h3>
       </lable>
       <br>
       <span class="multiselect">
@@ -100,7 +98,7 @@
           <select>
             <option>Select an option</option>
           </select>
-          <div class="overSelect">  
+          <div class="overSelect">
           </div>
         </div>
         <div id="checkboxes">
@@ -126,11 +124,12 @@
       <br>
       <br>
       <br>
-      <center>  
-        <button class="button button2" onclick="movetoNext()" id="myButton">Next</button>
-      </center>  
+
+	  <center>
+		  <input type="submit" style="margin: 0 auto" value="Next" class="button button2" id="myButton" />
+	  </center>
+	  
     </form>
   </div>
 </body>
 </html>
-

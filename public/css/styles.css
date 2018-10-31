@@ -48,6 +48,7 @@ lable{
 .header {
 	height: 100px;
 	width:100%;
+	overflow: hidden;
 }
 .header h2 {
 	top: 10px;
@@ -99,7 +100,11 @@ display: block;
 .selectBox {
 	position: relative;
 } 
-
+span{
+	color:black !important;
+	font-size:18px;
+	font-weight: 400;
+}
 .selectBox select {
 	width: 294px;
 	font-weight: bold;

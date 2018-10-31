@@ -27,7 +27,9 @@ $(document).ready(function(){
 	$("select.test5").change(function(){
         var value5 = $(".test5 option:selected").val();
 		$(".val5").attr("value", value5);
+
     });
+
 	$("#submitClick").click(function(){
 	var v5 = parseInt($(".val5").val());
 	var v4 = parseInt($(".val4").val());
@@ -37,6 +39,7 @@ $(document).ready(function(){
       	var totalScore =  ((v1+v2+v3+v4+v5)/5);
         localStorage.setItem('score', totalScore); 
 	});
+
 });
 function myFunction() {
  // document.getElementById("demo").innerHTML = "Hello World";
