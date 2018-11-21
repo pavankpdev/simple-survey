@@ -12,7 +12,6 @@ $(document).ready(function(){
         var value1 = $(".test1 option:selected").val();
         $(".val1").attr("value", value1);
           });
-
 	$("select.test2").change(function(){
         var value2 = $(".test2 option:selected").val();
 		$(".val2").attr("value", value2);
@@ -29,7 +28,6 @@ $(document).ready(function(){
         var value5 = $(".test5 option:selected").val();
 		$(".val5").attr("value", value5);
 
-
     });
 
 	$("#submitClick").click(function(){
@@ -38,15 +36,11 @@ $(document).ready(function(){
 	var v3 = parseInt($(".val3").val());
 	var v2 = parseInt($(".val2").val());
 	var v1 = parseInt($(".val1").val());
-
       	var totalScore =  ((v1+v2+v3+v4+v5)/5);
-        alert(totalScore);
-
+        localStorage.setItem('score', totalScore); 
 	});
 
-
 });
-
 function myFunction() {
  // document.getElementById("demo").innerHTML = "Hello World";
  window.location.href="/lastPage" ;
@@ -128,7 +122,6 @@ load/stress testing of application and analysis of captured performance metrics?
 <br>
 <center>
     <input type="submit" class="button button2" id="submitClick" value="Submit">
-    <input type="submit" class="button button2" id="myButton" value="Next">
 </center>
 </div>
 </form>
