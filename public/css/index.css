@@ -1,196 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 
-                  body{
-                    margin:0px;
-                    padding:0px; 
-              
-                  }
+.logo {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
 
-                  .form-container {
-                      display: flex;
-                      justify-content: center;
-                  }
+.description {
+  font-weight: 400;
+}
 
-                  .form-container form {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    padding: 0 61px;
-                    font-size:14px;
-                  }
-                  
-                  .form-container label {
-                      display: block;
-                  }
-                  
-                  .form-container input {
-                      border-radius: 10px;
-                      border: 1px solid #ccc;
-                      padding: 12px 20px;
-                  }
-                  
-                  .form-container button {
-                      background-color: #252525;
-                      color: #fff;
-                      padding: 15px 25px;
-                      border-radius: 20px;
-                      border: 2px solid #fff;
-                      cursor: pointer;
-                  }
+body {
+  padding: 0;
+  margin: 0;
+}
 
-                  .form-container button:hover {
-                    background-color: #000000;
-                  }
-                  
-                  .back-color{
-                  
-                    background-color: #fff;
-                  
-                  }
-                  h3 {
-                      color: orangered;
-                  }
-                  .checkbox{
-                       color : white;
-                  }
-                  lable{
-                    display: inline-block;
-                      margin: 8px;
-                      padding: 12px;
-                      list-style: none;
-                      width: 493px;
-                     
-                      padding-right: 276px ;
-                  }
-                  
-                  .danger {
-                      width: 1200px;
-                     /*  background-color: #bb511e; */
-                      /* height: 85px; */
-                      float: right;
-                      
-                  }
-                  .center {
-                      margin: auto;
-                      border: 0px solid #6153d82e;
-                      padding: 75px;
-                      margin: -87px 11px;
-                  }
-                  .header img {
-                      float: left;
-                      width: 104px;
-                      height: 95px;
-                      /* background: #555; */
-                      /* padding-top: 31px; */
-                  }
-                  .header {
-                    height: 100px;
-                    width:100%;
-                  }
-                  .header h2 {
-                    top: 10px;
-                    left: 10px;
-                    color: black;
-                  }
-                  
-                  .header h1 {
-                    top: 10px;
-                    left: 10px;
-                    color: black;
-                  }
-                  h4{
-                      color:orangered;
-                  }
-                  
-                  .button {
-                      background-color: rgb(175, 165, 76); /* Green */
-                      border: none;
-                      color: white;
-                      padding: 15px 32px;
-                      text-align: center;
-                      text-decoration: none;
-                      display: inline-block;
-                      font-size: 16px;
-                      margin: 4px 2px;
-                      cursor: pointer;
-                  }
+.logo {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
 
-                  
-                  input[type=text] {
-                      width: 18%;
-                      padding: 12px 20px;
-                      margin: 10px 3px;
-                      box-sizing: border-box;
-                  }
-
-
-
-                  p {
-                    display: block;
-                      margin-block-start: -4em;
-                      margin-block-end: 3em;
-                      margin-inline-start: 1015px;
-                      margin-inline-end: 55px;
-                  }
-                  /* chekcbox in select item style Start */
-                  
-                   .multiselect {
-                      width: 223px;
-                      margin: 39px 700px;
-                      height: 46px -26px;
-                  } 
-                  
-                   .selectBox {
-                    position: relative;
-                  } 
-                  
-                  .selectBox select {
-                      width: 294px;
-                      font-weight: bold;
-                      height: 41px;
-                      padding: -26px -30px;
-                      margin: -70px 801px;
-                  }
-                  
-                  .overSelect {
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                  } 
-                  
-                  #checkboxes {
-                    display: none;
-                    border: 1px #dadada solid;
-                    color:#000;
-                  }
-                  
-                  #checkboxes label {
-                    display: block;
-                  }
-                  
-                  #checkboxes label:hover {
-                    background-color: #1e90ff;
-                  }
-                  /* chekcbox in select item style End */
-                  .button2 {background-color: #008CBA;}
-              
-                  .left{
-                    float:left;
-                  }
-                  .right_txt{
-                   float:right; 
-                   position: absolute;
-                   top:30px;
-                   left:115px;
-                   font-size:25px;
-                   font-family:arial;
-              
-                  }
-                  .text{
-                    padding: 61px;
-                  }
-                  .clear{
-                    clear:both;
-                  }
-             
+.description {
+  font-weight: 400;
+}
